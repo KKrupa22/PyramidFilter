@@ -1,0 +1,13 @@
+﻿  JaC.cpp
+D:\Studia\JA\Projekt\JaC\JaC.cpp(4,6): warning C4273: "PyramidC": niespójne powiązanie biblioteki dll
+  (kompilowanie pliku źródłowego „/JaC.cpp”)
+      D:\Studia\JA\Projekt\JaC\JaC.h(9,25):
+      zobacz poprzednią definicję „PyramidC”
+  
+     Trwa tworzenie biblioteki D:\Studia\JA\Projekt\JaProjekt\x64\Release\JaC.lib i obiektu D:\Studia\JA\Projekt\JaProjekt\x64\Release\JaC.exp
+  Trwa generowanie kodu
+  1 of 2 functions (50.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+  JaC.vcxproj -> D:\Studia\JA\Projekt\JaProjekt\x64\Release\JaC.dll

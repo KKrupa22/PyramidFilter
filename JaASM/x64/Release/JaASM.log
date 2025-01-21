@@ -1,0 +1,4 @@
+﻿  Assembling JaASM.asm...
+     Trwa tworzenie biblioteki D:\Studia\JA\Projekt\JaProjekt\x64\Release\JaASM.lib i obiektu D:\Studia\JA\Projekt\JaProjekt\x64\Release\JaASM.exp
+  LINK : określono opcję /LTCG, lecz generowanie kodu nie było wymagane; usuń opcję /LTCG z wiersza polecenia konsolidatora w celu podwyższenia wydajności konsolidatora
+  JaASM.vcxproj -> D:\Studia\JA\Projekt\JaProjekt\x64\Release\JaASM.dll

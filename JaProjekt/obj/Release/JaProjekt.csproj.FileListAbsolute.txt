@@ -1,0 +1,7 @@
+D:\Studia\JA\Projekt\JaProjekt\bin\Release\JaProjekt.exe.config
+D:\Studia\JA\Projekt\JaProjekt\bin\Release\JaProjekt.exe
+D:\Studia\JA\Projekt\JaProjekt\bin\Release\JaProjekt.pdb
+D:\Studia\JA\Projekt\JaProjekt\obj\Release\JaProjekt.csproj.AssemblyReference.cache
+D:\Studia\JA\Projekt\JaProjekt\obj\Release\JaProjekt.csproj.CoreCompileInputs.cache
+D:\Studia\JA\Projekt\JaProjekt\obj\Release\JaProjekt.exe
+D:\Studia\JA\Projekt\JaProjekt\obj\Release\JaProjekt.pdb

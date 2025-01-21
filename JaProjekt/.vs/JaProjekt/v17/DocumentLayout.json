@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Studia\\JA\\Projekt\\JaProjekt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DF6B8DB-BA2F-4EE4-9B62-A4B68D6684EF}|JaProjekt.csproj|d:\\studia\\ja\\projekt\\japrojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DF6B8DB-BA2F-4EE4-9B62-A4B68D6684EF}|JaProjekt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DB4506C-98FE-430E-BC64-13ED538127C4}|..\\JaASM\\JaASM.vcxproj|D:\\Studia\\JA\\Projekt\\JaASM\\JaASM.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAA792F-6BF8-482B-AA23-52DCB3090C34}|..\\JaC\\JaC.vcxproj|D:\\Studia\\JA\\Projekt\\JaC\\JaC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 238,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Studia\\JA\\Projekt\\JaProjekt\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Studia\\JA\\Projekt\\JaProjekt\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwC0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T00:06:10.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JaC.cpp",
+              "DocumentMoniker": "D:\\Studia\\JA\\Projekt\\JaC\\JaC.cpp",
+              "RelativeDocumentMoniker": "..\\JaC\\JaC.cpp",
+              "ToolTip": "D:\\Studia\\JA\\Projekt\\JaC\\JaC.cpp",
+              "RelativeToolTip": "..\\JaC\\JaC.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-20T23:10:53.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JaASM.asm",
+              "DocumentMoniker": "D:\\Studia\\JA\\Projekt\\JaASM\\JaASM.asm",
+              "RelativeDocumentMoniker": "..\\JaASM\\JaASM.asm",
+              "ToolTip": "D:\\Studia\\JA\\Projekt\\JaASM\\JaASM.asm",
+              "RelativeToolTip": "..\\JaASM\\JaASM.asm",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-20T22:58:50.714Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
