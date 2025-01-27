@@ -40,8 +40,10 @@
             sourcePath = new TextBox();
             openFile = new Button();
             pictureBox1 = new PictureBox();
+            saveFile = new Button();
             pictureBox2 = new PictureBox();
             openFileDialog = new OpenFileDialog();
+            saveFileDialog = new SaveFileDialog();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -61,43 +63,49 @@
             groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(Biblioteka);
             groupBox1.Controls.Add(Start);
-            groupBox1.Location = new Point(12, 338);
+            groupBox1.Location = new Point(17, 563);
+            groupBox1.Margin = new Padding(4, 5, 4, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(776, 100);
+            groupBox1.Padding = new Padding(4, 5, 4, 5);
+            groupBox1.Size = new Size(1109, 167);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
             // Czas
             // 
-            Czas.Location = new Point(616, 39);
+            Czas.Location = new Point(880, 65);
+            Czas.Margin = new Padding(4, 0, 4, 0);
             Czas.Name = "Czas";
-            Czas.Size = new Size(99, 28);
+            Czas.Size = new Size(141, 47);
             Czas.TabIndex = 8;
             Czas.Text = "-----";
             Czas.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // CzasText
             // 
-            CzasText.Location = new Point(522, 39);
+            CzasText.Location = new Point(746, 65);
+            CzasText.Margin = new Padding(4, 0, 4, 0);
             CzasText.Name = "CzasText";
-            CzasText.Size = new Size(97, 28);
+            CzasText.Size = new Size(139, 47);
             CzasText.TabIndex = 7;
             CzasText.Text = "Czas wykonania:";
             CzasText.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(139, 60);
+            numericUpDown1.Location = new Point(199, 100);
+            numericUpDown1.Margin = new Padding(4, 5, 4, 5);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(100, 23);
+            numericUpDown1.Size = new Size(143, 31);
             numericUpDown1.TabIndex = 6;
             // 
             // Watki
             // 
-            Watki.Location = new Point(6, 58);
+            Watki.Location = new Point(9, 97);
+            Watki.Margin = new Padding(4, 0, 4, 0);
             Watki.Name = "Watki";
-            Watki.Size = new Size(127, 23);
+            Watki.Size = new Size(181, 38);
             Watki.TabIndex = 5;
             Watki.Text = "Wybierz ilość wątków:";
             Watki.TextAlign = ContentAlignment.MiddleCenter;
@@ -107,17 +115,19 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "C", "ASM" });
-            comboBox1.Location = new Point(139, 24);
+            comboBox1.Location = new Point(199, 40);
+            comboBox1.Margin = new Padding(4, 5, 4, 5);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(100, 23);
+            comboBox1.Size = new Size(141, 33);
             comboBox1.TabIndex = 4;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Biblioteka
             // 
-            Biblioteka.Location = new Point(18, 24);
+            Biblioteka.Location = new Point(26, 40);
+            Biblioteka.Margin = new Padding(4, 0, 4, 0);
             Biblioteka.Name = "Biblioteka";
-            Biblioteka.Size = new Size(115, 23);
+            Biblioteka.Size = new Size(164, 38);
             Biblioteka.TabIndex = 2;
             Biblioteka.Text = "Wybierz biblioteke:";
             Biblioteka.TextAlign = ContentAlignment.MiddleCenter;
@@ -125,9 +135,10 @@
             // 
             // Start
             // 
-            Start.Location = new Point(313, 13);
+            Start.Location = new Point(447, 22);
+            Start.Margin = new Padding(4, 5, 4, 5);
             Start.Name = "Start";
-            Start.Size = new Size(147, 81);
+            Start.Size = new Size(210, 135);
             Start.TabIndex = 1;
             Start.Text = "Start";
             Start.UseVisualStyleBackColor = true;
@@ -135,7 +146,8 @@
             // 
             // splitContainer1
             // 
-            splitContainer1.Location = new Point(12, 12);
+            splitContainer1.Location = new Point(17, 20);
+            splitContainer1.Margin = new Padding(4, 5, 4, 5);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -146,24 +158,28 @@
             // 
             // splitContainer1.Panel2
             // 
+            splitContainer1.Panel2.Controls.Add(saveFile);
             splitContainer1.Panel2.Controls.Add(pictureBox2);
-            splitContainer1.Size = new Size(776, 320);
-            splitContainer1.SplitterDistance = 384;
+            splitContainer1.Size = new Size(1109, 533);
+            splitContainer1.SplitterDistance = 548;
+            splitContainer1.SplitterWidth = 6;
             splitContainer1.TabIndex = 1;
             // 
             // sourcePath
             // 
-            sourcePath.Location = new Point(110, 293);
+            sourcePath.Location = new Point(157, 488);
+            sourcePath.Margin = new Padding(4, 5, 4, 5);
             sourcePath.Name = "sourcePath";
-            sourcePath.Size = new Size(271, 23);
+            sourcePath.Size = new Size(385, 31);
             sourcePath.TabIndex = 2;
             sourcePath.TextChanged += sourcePath_TextChanged;
             // 
             // openFile
             // 
-            openFile.Location = new Point(6, 291);
+            openFile.Location = new Point(9, 485);
+            openFile.Margin = new Padding(4, 5, 4, 5);
             openFile.Name = "openFile";
-            openFile.Size = new Size(98, 26);
+            openFile.Size = new Size(140, 43);
             openFile.TabIndex = 1;
             openFile.Text = "Otwórz plik";
             openFile.UseVisualStyleBackColor = true;
@@ -172,9 +188,10 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ActiveBorder;
-            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Location = new Point(4, 5);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(378, 284);
+            pictureBox1.Size = new Size(540, 473);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -182,12 +199,23 @@
             pictureBox1.DragDrop += pictureBox1_DragDrop;
             pictureBox1.DragEnter += pictureBox1_DragEnter;
             // 
+            // saveFile
+            // 
+            saveFile.Location = new Point(180, 485);
+            saveFile.Name = "saveFile";
+            saveFile.Size = new Size(211, 43);
+            saveFile.TabIndex = 1;
+            saveFile.Text = "Zapisz plik";
+            saveFile.UseVisualStyleBackColor = true;
+            saveFile.Click += saveFile_Click;
+            // 
             // pictureBox2
             // 
             pictureBox2.BackColor = SystemColors.ActiveBorder;
-            pictureBox2.Location = new Point(3, 3);
+            pictureBox2.Location = new Point(4, 5);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(385, 284);
+            pictureBox2.Size = new Size(550, 473);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -198,13 +226,18 @@
             openFileDialog.FileName = "openFileDialog";
             openFileDialog.FileOk += openFileDialog_FileOk;
             // 
+            // saveFileDialog
+            // 
+            saveFileDialog.FileOk += saveFileDialog_FileOk;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 447);
+            ClientSize = new Size(1140, 745);
             Controls.Add(splitContainer1);
             Controls.Add(groupBox1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -240,5 +273,7 @@
         private Bitmap sourceBmp;
         private Bitmap destBmp;
         private int threadsNumb = 1;
+        private Button saveFile;
+        private SaveFileDialog saveFileDialog;
     }
 }

@@ -178,5 +178,21 @@ namespace JaProjektGUI
         {
 
         }
+
+        private void saveFile_Click(object sender, EventArgs e)
+        {
+            if (destBmp != null)
+            {
+                String workingDirectoryTemp = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                saveFileDialog.InitialDirectory = workingDirectoryTemp;
+                saveFileDialog.FileName = Path.GetFileNameWithoutExtension(sourcePath.Text) + "Pyramid.png";
+                saveFileDialog.ShowDialog(this);
+            }
+        }
+
+        private void saveFileDialog_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            destBmp.Save(saveFileDialog.FileName, ImageFormat.Png);
+        }
     }
 }

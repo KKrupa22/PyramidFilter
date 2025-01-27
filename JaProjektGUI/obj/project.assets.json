@@ -8,28 +8,25 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Kamil\\.nuget\\packages\\": {},
-    "D:\\Programy\\VSCACHE\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\siano\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studia\\JA\\Projekt\\JaProjektGUI\\JaProjektGUI.csproj",
+      "projectUniqueName": "D:\\Studia\\JA\\PyramidFilter\\JaProjektGUI\\JaProjektGUI.csproj",
       "projectName": "JaProjektGUI",
-      "projectPath": "D:\\Studia\\JA\\Projekt\\JaProjektGUI\\JaProjektGUI.csproj",
-      "packagesPath": "C:\\Users\\Kamil\\.nuget\\packages\\",
-      "outputPath": "D:\\Studia\\JA\\Projekt\\JaProjektGUI\\obj\\",
+      "projectPath": "D:\\Studia\\JA\\PyramidFilter\\JaProjektGUI\\JaProjektGUI.csproj",
+      "packagesPath": "C:\\Users\\siano\\.nuget\\packages\\",
+      "outputPath": "D:\\Studia\\JA\\PyramidFilter\\JaProjektGUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Programy\\VSCACHE\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kamil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\siano\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
@@ -54,8 +51,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -79,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

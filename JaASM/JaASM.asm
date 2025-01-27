@@ -45,21 +45,21 @@ padding: ; Jezeli z wyniku dzielenia zosta³a reszta to padding = 4 - ((szerokosc
     mov r15, rbx
     jmp end_padding
 
-no_padding: ; Jezeli z wyniku dzielenia nie ma reszty, to czyscimy rejestr
+no_padding: ; Jezeli z wyniku dzielenia nie ma reszty, to czyszczony jest rejestr
     xor r15, r15
 
-end_padding: ; Po zapisaniu paddingu czyœcimy rejestr potrzebny do dzielenia
+end_padding: ; Po zapisaniu paddingu czyszczony jest rejestr potrzebny do dzielenia
     xor rbx, rbx
 
 skip_init: ; Inicjowanie licznika pominiêæ: r12 = szerokoœæ - 4 poniewa¿ ramka jest po 2 stronach
     mov r12, r8
     sub r12, 4
 
-    cmp r11, r9 ; Sprawdzamy czy jesteœmy w ostatnim rzêdzie
+    cmp r11, r9 ; Sprawdzenie czy znajdujemy sie w ostatnim rzêdzie
     je last_row
     jmp not_last
 
-last_row: ; Jezeli jestesmy w ostatnim rzedzie to pomijamy 2 rzêdy poprzednie
+last_row: ; Jezeli tak to w ostatnim rzedzie to pomijamy 2 rzêdy poprzednie
     sub r11, 2
 
 not_last: ; Obliczamy wielkoœæ naszego chunka w bajtach uwzglêdniaj¹c padding, oraz miejsce w którym zacznie siê pobieranie wartoœci ze Ÿród³a
@@ -108,7 +108,7 @@ processChunk:
     pshufb xmm4, xmmword ptr[shufMaskGreen]
     pshufb xmm5, xmmword ptr[shufMaskBlue]
 
-    pmovzxbw xmm3, xmm3 ; Rozszerzanie bajtów do s³ów, ¿eby podczas mno¿enia mog³o dojœæ do overflow bez bez ingerencji w inne kolory
+    pmovzxbw xmm3, xmm3 ; Rozszerzanie bajtów do s³ów, ¿eby podczas mno¿enia mog³o dojœæ do overflow bez ingerencji w inne kolory
     pmovzxbw xmm4, xmm4
     pmovzxbw xmm5, xmm5
 
@@ -168,7 +168,7 @@ saveToDest: ; Po wykonaniu ca³ej maski filtru zapisujemy wynik do docelowego obr
     phaddw xmm8, xmm8
     pand xmm8, xmmword ptr[maskSum]
 
-    mov rcx, 81 ; Po otrzymaniu wartoœci musimy znormalizowaæ wyniki poprzez podzielenie ka¿dego z nich przez sumê wartoœci maski
+    mov rcx, 81 ; Po otrzymaniu wartoœci trzeba znormalizowaæ wyniki poprzez podzielenie ka¿dego z nich przez sumê wartoœci maski
     movq rax, xmm6
     xor rdx, rdx
     div rcx
@@ -210,7 +210,7 @@ skip_complete:
     pxor xmm8, xmm8
     jmp processChunk
 
-skiping: ; Jezeli licznik pominiec = 0, to pomijamy 4 pixele + padding, by stworzyc ramke, poniewaz nie ma miejsca na zastosowanie filtru maski
+skiping: ; Jezeli licznik pominiec = 0, to pomijane sa 4 pixele + padding, by stworzyc ramke, poniewaz nie ma miejsca na zastosowanie filtru maski
     add r10, 12
     add r10, r15
     mov r12, r8
