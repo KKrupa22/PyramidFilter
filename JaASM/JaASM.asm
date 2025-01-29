@@ -18,11 +18,19 @@ bpp dq 3
 
 .code
 PyramidASM proc
-    push rbp
-    mov rbp, rsp
+    mov r10, [rsp + 40] ;startY
+    mov r11, [rsp + 48] ;endY
 
-    mov r10, [rsp + 48] ;startY
-    mov r11, [rsp + 56] ;endY
+    push rbx
+    push rbp
+    push rdi
+    push rsi
+    push r12
+    push r13
+    push r14
+    push r15
+    mov rbp, rsp
+    
     mov rsi, rdx ;Destination
     mov rdi, rcx ;Source
     ; r8 - width
@@ -218,7 +226,14 @@ skiping: ; Jezeli licznik pominiec = 0, to pomijane sa 4 pixele + padding, by st
     jmp skip_complete
 
 exitFunc:
+    pop r15
+    pop r14
+    pop r13
+    pop r12
+    pop rsi
+    pop rdi
     pop rbp
+    pop rbx
     ret
 
 PyramidASM endp
